@@ -1,0 +1,51 @@
+body {
+    background: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#player {
+    width: 80vw;
+    height: 60vh;
+    background: black;
+    margin: 20vh auto 0px auto;
+    display: block;
+}
+
+.row{
+    display: flex;
+
+    align-items: end;
+
+    height: 100px;
+
+    overflow: hidden;
+}
+
+.row:first-child{
+    left: 0 !important;
+}
+
+.left{
+
+    left: -5px;
+}
+
+.circle{
+    --diametr : 50px;
+
+
+    position: relative;
+
+    bottom: calc(-0.5 * var(--diametr));
+
+    width  : 7px;
+    height : var(--diametr);
+    /* margin-left: 2px; */
+
+    border: 1px solid red;
+
+    border-radius: 50%;
+
+    /* transform: rotateY(70deg); */
+}
