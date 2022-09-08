@@ -51,8 +51,17 @@ function FrameLooper() {
     analyser.getByteFrequencyData(fbc_array);
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    var gradient = ctx.createLinearGradient(0,0,  canvas.width,canvas.height);
+
+        // Добавление трёх контрольных точек
+        gradient.addColorStop(0, 'green');
+        gradient.addColorStop(.5, 'cyan');
+        gradient.addColorStop(1, 'green');
+
+
     ctx.fillStyle = "#ffffff";
-    ctx.strokeStyle = "#ffffff";
+    ctx.strokeStyle = gradient;
 
     
     ctx.beginPath();
